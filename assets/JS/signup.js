@@ -5,7 +5,7 @@ register.addEventListener("click",function(e){
     window.location.href = "signup.html";
 })
 login.addEventListener("click",function(e){
-    window.location.href = "page.html";
+    window.location.href = "login.page.html";
 })
 
 let newData=[];
