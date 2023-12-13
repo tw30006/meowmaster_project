@@ -1,0 +1,167 @@
+body {
+    font-family: Noto Sans Traditional Chinese;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.header{
+    width: 100%;
+    background-color: #D9BF84;
+    margin-bottom: 150px;
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #D9BF84;
+    display: Fixed;
+    bottom: 0px;
+}
+
+.path {
+    position: Absolute;
+    left: 150px;
+    top: 100px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.subTitle{
+    display:flex;
+    justify-content: space-between;
+}
+
+.wrap{
+    width: 1200px;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+}
+
+.sideMenu{
+    margin-right: 800px;
+    width: 150px;
+    margin: 0 auto;
+    height: 100%;
+    /* background-color: white; */
+    
+}
+
+#sideMenu{
+    list-style-type: none;
+    font-size: 18px;
+    background: white;
+    border:1px solid #545454;
+    padding:0;
+}
+
+li a{
+    display:block;
+    color:black;
+    text-decoration: none;
+    padding: 10px;
+        border:1px solid #545454;
+}
+
+li a:hover{
+    background-color: yellow;
+    color:brown;
+}
+.Category h3{
+    font-size: 24px;
+    border:1px solid #545454;
+    padding:0.5em;
+}
+
+.Category h3:hover,
+.Category h3.active{
+  background: #D9BF84;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    position: relative;
+}
+
+nav.navigation a + a::before{
+    content: '';
+    position: absolute;
+    border-top: 1px solid;
+    left: 10px;
+    right: 10px;
+    top: 0;
+}
+
+.container{
+    width: 1000px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    text-align: left;
+    width: 22%; /* Adjust as needed */
+    border-radius: 12.5px;
+    border: 1px
+}
+
+.product-image {
+    width: 100%; /* Take up 100% of the container's width */
+    height: 200; /* Take up 100% of the container's height */
+    display: block;
+    transform: scale(1);
+    transition: .5s;
+}
+
+.priceButton{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 12.5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+aside {
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 1.25em;
+    color: #f07baf;
+}
+
+p.price{
+    font-size: 1.125em;
+    color: #000;
+    font-style: italic;
+}
+
+#total {
+    font-weight: bold;
+}

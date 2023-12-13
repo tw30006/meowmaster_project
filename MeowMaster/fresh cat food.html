@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Users/fletcherwu/MeowMaster/css/styles.css">
+    <title>Meow Master</title>
+</head>
+<body>
+    <div class="header">
+        <!-- 放Banner -->
+    </div>
+
+    <div class="path">
+        <ul>
+            <il>首頁</il>
+            <il>貓咪鮮食</il>
+        </ul>
+    </div>
+
+    <main>
+        <div class="wrap">
+            <!-- <div class="sideMenu">
+                <div class="Category">
+                    <h3>熱賣商品</h3>
+                </div>
+                <div class="Category">
+                    <h3>全部商品</h3>
+                </div>
+                <div class="Category">
+                    <h3>貓咪鮮食</h3>
+                </div>
+                <div class="Category">
+                    <h3>貓咪主食</h3>
+                </div>
+                <div class="Category">
+                    <h3>貓咪罐罐</h3>
+                </div>
+                <div class="Category">
+                    <h3>貓咪零食</h3>
+                </div>
+            </div> -->
+            <div class="sideMenu">
+                <nav class="navigation">
+                    <ul id="sideMenu">
+                        <li><a href="/Users/fletcherwu/MeowMaster/pages/hot-selling products.html">熱賣商品</a></li>
+                        <li><a href="/Users/fletcherwu/MeowMaster/pages/all products.html">全部商品</a></li>
+                        <li><a href="/Users/fletcherwu/MeowMaster/pages/fresh cat food.html">貓咪鮮食</a></li>
+                        <li><a href="/Users/fletcherwu/MeowMaster/pages/main cat food.html">貓咪主食</a></li>
+                        <li><a href="/Users/fletcherwu/MeowMaster/pages/cat canned food.html">貓咪罐罐</a></li>
+                        <li><a href="/Users/fletcherwu/MeowMaster/pages/cat snacks.html">貓咪零食</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container">
+                <div class="subTitle">
+                    <h1>貓咪鮮食</h1>
+                    <h1>MeowMaster 精心烹調，每日限量，新鮮上桌</h1>
+                </div>
+                <div class="row">
+                    <section class="product">
+                            <img class="product-image" src="/Users/fletcherwu/MeowMaster/assets/images/鮭魚蘆筍鮮食餐.png" alt="Product 1">
+                        <h2>鮭魚蘆筍鮮食餐</h2>
+                        <p>香煎鮭魚風味濃厚，新鮮蘆筍富含營養</p>
+                        <div class="priceButton">
+                            <p class="price">NT $199-350</p>
+                            <button onclick="addToCart('Product 1', 20.00)">立即購買</button>
+                        </div>
+                    </section>
+            
+                    <section class="product">
+                            <img class="product-image" src="/Users/fletcherwu/MeowMaster/assets/images/鯖魚蛋蔬鮮食餐.png" alt="Product 2">
+                            <h2>鯖魚蛋蔬鮮食餐</h2>
+                        <p>火烤鯖魚搭配新鮮南瓜、花椰菜、土雞蛋，幼貓不能抵擋的美味</p>
+                        <div class="priceButton">
+                            <p class="price">NT $199-350</p>
+                            <button onclick="addToCart('Product 2', 25.00)">立即購買</button>
+                        </div>
+                    </section>
+            
+                    <section class="product">
+                            <img class="product-image" src="/Users/fletcherwu/MeowMaster/assets/images/雞肉豆腐鮮食餐.png" alt="Product 3">
+                        <h2>雞肉豆腐鮮食餐</h2>
+                        <p>嫩炒雞肉豆腐鬆軟可口，高齡期貓貓最佳選擇</p>
+                        <div class="priceButton">
+                            <p class="price">NT $199-350</p>
+                            <button onclick="addToCart('Product 3', 30.00)">立即購買</button>
+                        </div>
+                    </section>
+            
+                    <section class="product">
+                        <img class="product-image" src="/Users/fletcherwu/MeowMaster/assets/images/牛肉起司鮮食餐.png" alt="Product 4">
+                        <h2>牛肉起司鮮食餐</h2>
+                        <p>牛肉 X 起司的絕妙組合，營養均衡貓貓超愛</p>
+                        <div class="priceButton">
+                            <p class="price">NT $199-350</p>
+                            <button onclick="addToCart('Product 4', 35.00)">立即購買</button>
+                        </div>
+                    </section>
+                </div>
+            
+                <div class="row">
+                    <section class="product">
+                        <img class="product-image" src="/Users/fletcherwu/MeowMaster/assets/images/海味湯飯鮮食餐.png" alt="Product 1">
+                        <h2>海味湯飯鮮食餐</h2>
+                        <p>各式海味誘貓好滋味，有效補足每日攝水量</p>
+                        <div class="priceButton">
+                            <p class="price">NT $199-350</p>
+                            <button onclick="addToCart('Product 1', 20.00)">立即購買</button>
+                        </div>
+                    </section>
+            
+                    <section class="product">
+                        <img class="product-image" src="/Users/fletcherwu/MeowMaster/assets/images/豬肝拌拌鮮食餐.png" alt="Product 2">
+                        <h2>豬肝拌拌鮮食餐</h2>
+                        <p>豬肝 X 時蔬齊上陣，適合各種年齡的貓貓</p>
+                        <div class="priceButton">
+                            <p class="price">NT $199-350</p>
+                            <button onclick="addToCart('Product 2', 25.00)">立即購買</button>
+                        </div>
+                    </section>
+            
+                    <section class="product">
+                        <img class="product-image" src="/Users/fletcherwu/MeowMaster/assets/images/豬豬蓋飯鮮食餐.png" alt="Product 3">
+                        <h2>豬豬蓋飯鮮食餐</h2>
+                        <p>懷孕／泌乳期貓貓必備的能量餐</p>
+                        <div class="priceButton">
+                            <p class="price">NT $199-350</p>
+                            <button onclick="addToCart('Product 3', 30.00)">立即購買</button>
+                        </div>
+                    </section>
+            
+                    <section class="product">
+                        <img class="product-image" src="/Users/fletcherwu/MeowMaster/assets/images/羊肉蔬菜鮮食餐.png" alt="Product 4">
+                        <h2>羊肉蔬菜鮮食餐</h2>
+                        <p>虛弱怕冷貓貓的最佳進補選擇</p>
+                        <div class="priceButton">
+                            <p class="price">NT $199-350</p>
+                            <button onclick="addToCart('Product 4', 35.00)">立即購買</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <aside>
+        <h2>Shopping Cart</h2>
+        <ul id="cart">
+            <!-- Items added to the cart will appear here -->
+        </ul>
+        <p>Total: <span id="total">$0.00</span></p>
+    </aside>
+    <script src="script.js"></script>
+
+    <div class="footer">
+        <!-- 放Footer -->
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-Tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../scss/all.css">
+    <script src="../JS/common.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- <div class="header"></div> -->
+        <div class="container-xl">
+            <div class="box">
+                <div class="btn-group btn-size" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary btn-lg register">註冊會員</button>
+                    <button type="button" class="btn btn-primary btn-lg login">加入會員</button>
+                </div>
+                <form class="signup-content">
+                    <h5 class="login-title">註冊會員</h5>
+                    <!-- lg-3 -->
+                    <div class="form-size">
+                        <input type="text" placeholder="用戶名" class="form-control username">
+                        <input type="email" placeholder="電子郵件" class="form-control eamil" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="password" placeholder="密碼" class="form-control password" id="exampleInputPassword1">
+                        <div id="emailHelp" class="form-text">至少8個字元</div>
+                    </div>
+                </form>
+                    <p class="birthday">出生日期</p>
+                    <div class="birthday-area">
+                        <input type="text" placeholder="年" class="birthday-style year">
+                        <input type="text" placeholder="月" class="birthday-style month">
+                        <input type="text" placeholder="日" class="birthday-style day">
+                    </div>
+                    <div class="lg-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">我願意接收 MeowMaster的最新消息、及優惠和福利推廣相關資訊</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-line">加入LINE好友</button>
+                    <div class="link-top"></div>
+                    <div class="lg-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">我同意網站服務條款及隱私權政策</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-join">立即加入！</button>
+                
+                
+            </div>
+        </div>
+        <!-- <div class="footer"></div> -->
+    </div>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="../assets/JS/signup.js"></script>
+</body>
+</html>

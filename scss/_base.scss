@@ -1,0 +1,30 @@
+body{
+    font-family: Noto Sans TC,Open Sans;
+    color: $gray-600;
+    max-width: 100%;
+    // background: #EDE2D980 50%
+}
+a{
+    color: $gray-600;
+}
+a:hover{
+    color: #77836b;
+}
+.btn-primary{
+    color: $gray-100;
+}
+.btn-primary:hover{
+    background: #77836b;
+    color: $gray-100;
+}
+.frame{
+    margin: 100px 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width:767px) {
+        margin: 0 100px;
+        white-space: nowrap;
+        word-break: break-all;
+    }
+}

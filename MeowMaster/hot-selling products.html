@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/common.js"></script>
+    <title>Meow Master</title>
+</head>
+<body>
+    <div class="header">
+        <!-- 放Banner -->
+    </div>
+
+    <div class="path">
+        <ul>
+            <il>首頁</il>
+            <il>熱賣商品</il>
+        </ul>
+    </div>
+
+    <main>
+        <div class="wrap">
+            <!-- <div class="sideMenu">
+                <div class="Category">
+                    <h3>熱賣商品</h3>
+                </div>
+                <div class="Category">
+                    <h3>全部商品</h3>
+                </div>
+                <div class="Category">
+                    <h3>貓咪鮮食</h3>
+                </div>
+                <div class="Category">
+                    <h3>貓咪主食</h3>
+                </div>
+                <div class="Category">
+                    <h3>貓咪罐罐</h3>
+                </div>
+                <div class="Category">
+                    <h3>貓咪零食</h3>
+                </div>
+            </div> -->
+            <div class="sideMenu">
+                <nav class="navigation">
+                    <ul id="sideMenu">
+                        <li><a href="../pages/hot-selling products.html">熱賣商品</a></li>
+                        <li><a href="../pages/all products.html">全部商品</a></li>
+                        <li><a href="../pages/fresh cat food.html">貓咪鮮食</a></li>
+                        <li><a href="../pages/main cat food.html">貓咪主食</a></li>
+                        <li><a href="../pages/cat canned food.html">貓咪罐罐</a></li>
+                        <li><a href="../pages/cat snacks.html">貓咪零食</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container">
+                <h1>熱賣商品</h1>
+                <div class="row">
+                    <section class="product">
+                            <img class="product-image" src="../assets/images/鮭魚蘆筍鮮食餐.png" alt="Product 1">
+                        <h2>鮭魚蘆筍鮮食餐</h2>
+                        <p>香煎鮭魚風味濃厚，新鮮蘆筍富含營養</p>
+                        <div class="priceButton">
+                            <p class="price">NT $199-350</p>
+                            <button onclick="addToCart('Product 1', 20.00)">立即購買</button>
+                        </div>
+                    </section>
+            
+                    <section class="product">
+                            <img class="product-image" src="../assets/images/海味湯飯鮮食餐.png" alt="Product 2">
+                            <h2>海味湯飯鮮食餐</h2>
+                        <p>各式海味誘人好滋味，有效補足每日攝水量</p>
+                        <div class="priceButton">
+                            <p class="price">NT $199-350</p>
+                            <button onclick="addToCart('Product 2', 25.00)">立即購買</button>
+                        </div>
+                    </section>
+            
+                    <section class="product">
+                            <img class="product-image" src="../assets/images/低敏無穀好鴨乾糧.png" alt="Product 3">
+                        <h2>低敏無穀好鴨乾糧</h2>
+                        <p>新鮮鴨胸，富含不飽和脂肪酸，低敏無穀，全貓配方</p>
+                        <div class="priceButton">
+                            <p class="price">NT $210-790</p>
+                            <button onclick="addToCart('Product 3', 30.00)">立即購買</button>
+                        </div>
+                    </section>
+            
+                    <section class="product">
+                        <img class="product-image" src="../assets/images/鮮蝦補水主食罐.png" alt="Product 4">
+                        <h2>鮮蝦補水主食罐</h2>
+                        <p>慢火精燉，誘人肉汁，挑嘴貓剋星</p>
+                        <div class="priceButton">
+                            <p class="price">NT $55-255</p>
+                            <button onclick="addToCart('Product 4', 35.00)">立即購買</button>
+                        </div>
+                    </section>
+                </div>
+            
+                <div class="row">
+                    <section class="product">
+                        <img class="product-image" src="../assets/images/低敏無穀好羊乾糧.png" alt="Product 1">
+                        <h2>低敏無穀好羊乾糧</h2>
+                        <p>草飼羔羊，幫助皮毛保健，低敏無穀，全貓配方</p>
+                        <div class="priceButton">
+                            <p class="price">NT $210-790</p>
+                            <button onclick="addToCart('Product 1', 20.00)">立即購買</button>
+                        </div>
+                    </section>
+            
+                    <section class="product">
+                        <img class="product-image" src="../assets/images/零食_雞肉.png" alt="Product 2">
+                        <h2>完美雞肉凍乾</h2>
+                        <p>天然純粹原肉塊，冷凍乾燥完美保留營養</p>
+                        <div class="priceButton">
+                            <p class="price">NT $199-399</p>
+                            <button onclick="addToCart('Product 2', 25.00)">立即購買</button>
+                        </div>
+                    </section>
+            
+                    <section class="product">
+                        <img class="product-image" src="../assets/images/豬肝拌拌鮮食餐.png" alt="Product 3">
+                        <h2>豬肝拌拌鮮食餐</h2>
+                        <p>豬肝時蔬齊上陣，適合各種年齡的貓貓</p>
+                        <div class="priceButton">
+                            <p class="price">NT $199-350</p>
+                            <button onclick="addToCart('Product 3', 30.00)">立即購買</button>
+                        </div>
+                    </section>
+            
+                    <section class="product">
+                        <img class="product-image" src="../assets/images/雞肉補水主食罐.png" alt="Product 4">
+                        <h2>火雞肉補水主食罐</h2>
+                        <p>慢火精燉，誘人肉汁，挑嘴貓剋星</p>
+                        <div class="priceButton">
+                            <p class="price">NT $55-255</p>
+                            <button onclick="addToCart('Product 4', 35.00)">立即購買</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

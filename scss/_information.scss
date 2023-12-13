@@ -1,0 +1,58 @@
+.container-information{
+    margin: 100px 200px;
+    border: 1px solid #91a07b;
+    border-radius: 5px;
+}
+.section-information{
+    border-radius: 5px;
+    // margin: 0 100px 200px 100px;
+    
+    display: flex;
+}
+.form-a {
+    width: 50%;
+    // border: 1px solid goldenrod;
+}
+.form-b{
+    width: 50%;
+    // position: relative;
+}
+.section-field{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+.information-title{
+    text-align: center;
+    margin: 5% 0 3% 0;
+}
+.section-subscription{
+    display: flex;
+    margin-top: 5%;
+}
+p{
+    text-align: center;
+    margin-top:16px;
+}
+.name-title ,.address-title{
+    padding: 0 16px;
+    margin-top:16px;
+}
+.label-size{
+    font-size: 14px;
+}
+.form-check{
+    width: 150px;
+    margin-left: 40%;
+}
+.subscription-title{
+    margin-left: 7%;
+}
+.section-save{
+    display: flex;
+    flex-direction:row-reverse;
+}
+.button-confirm{
+   margin: 0 5% 3% 0;
+}

@@ -1,0 +1,185 @@
+body{
+    font-family : Noto Sans Traditional Chinese;
+}
+.header{
+    width: 100%;
+    height: 130px;
+    background-color: #D9BF84;
+    margin-bottom: 150px;
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #D9BF84;
+    display: Fixed;
+    bottom: 0px;
+}
+
+.path {
+    position: Absolute;
+    left: 180px;
+    top: 194px;
+}
+.path il+il::before{
+    content: '/ ';
+}
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.item1 {
+    width: 100%;
+    display: flex;
+}
+
+.pic{
+    width: 50%;
+}
+.pic img {
+    width: 500px;
+    height: 500px;
+    border: 5px solid #6d6d6B;
+}
+.smallPic {
+    display: flex;
+}
+.smallPic .small{
+    width: 110px;
+    height: 110px;
+    margin: 2px;
+    border: 2px solid #6d6d6B;
+    box-sizing: border-box;
+}
+.title ul{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0px ;
+}
+div p{
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0px 10px 2px 0px;
+}
+.description{
+    width: 50%;
+    display: flex;
+    Flex-direction: column;
+}
+.description h2{
+    font-size: 32px;
+    margin-bottom: px;
+}
+.description p{
+    font-size: 20px;
+    line-height: 2;
+    color: #6d6d6B;
+}
+.description .tag{
+    align-self : flex-end;
+}
+.description .tag button{
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 5px;
+}
+.format{
+    display: flex;
+    margin: 10px;
+    align-items :center;
+}
+.format button{
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 10px;
+    width: 70px;
+}
+.price{
+    display: flex;
+    margin: 10px;
+    align-items :center;
+}
+h4{
+    font-size: 16px;
+    margin-right: 10px;
+}
+h3{
+    font-size: 28px;
+    text-align: center;
+    background-color: #d7d7d7;
+    line-height: 1.5;
+}
+.cart {
+    display: flex;   
+    align-items :center;
+    margin: 10px;
+}
+.cart button{
+    font-size: 16px;
+    line-height: 2;
+    width: 150px;
+    margin: 10px;
+}
+.add{
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-content : center
+}
+.additionalPurchase{
+    display: flex;
+    margin-bottom: 5px;
+    border: 1px solid #6d6d6B;
+}
+.additionalPurchase img{
+    width: 100px;
+    margin-right: 10px;
+}
+.additionalPurchase button{
+    width: 80px;
+    height: 30px;
+    margin-right: 10px;
+}
+.bt {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.priceandbt{
+    display: flex;
+    flex-direction: row;
+    justify-content : space-between;
+    margin-top: 20px;
+}
+.priceandbt p{
+    display: inline-block;
+}
+.item2{
+    margin: 50px 0px;
+}
+.item2 h2{
+    
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.likewrap{
+    display: flex;
+    justify-content: space-between;
+}
+.maybelike{
+    border: 1px solid #6d6d6B;
+    padding: 10px;
+}
+
+.maybelike img{
+    width: 200px;
+    height: 200px;
+}
+.bt h4{
+    font-weight: bold;
+    margin-bottom: 5px;
+}

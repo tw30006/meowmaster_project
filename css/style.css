@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.button{
+    font-family: 'Noto Sans TC';
+    font-weight: medium;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 4%;
+}
+.caption{
+    font-family: 'Noto Sans TC';
+    font-weight: regular;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 2%;
+    color: #9E9E9E;
+}
+h2{
+    font-family: 'Noto Sans TC';
+    font-weight: Bold;
+    font-size: 36px;
+    line-height: 120%;
+    letter-spacing: 4%;
+    color: #474747;
+}
+h3{
+    font-family: 'Noto Sans TC';
+    font-weight: Bold;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: 4%;
+    color: #474747;
+}
+h4{
+    font-family: 'Noto Sans TC';
+    font-weight: Bold;
+    font-size: 28px;
+    line-height: 120%;
+    letter-spacing: 4%;
+    color: #474747;
+}
+h5{
+    font-family: 'Noto Sans TC';
+    font-weight: medium;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 4%;
+    color: #474747;
+}
+h6{
+    font-family: 'Noto Sans TC';
+    font-weight: Bold;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 4%;
+}
+p{
+    font-family: 'Noto Sans TC';
+    font-weight: regular;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 2%;
+    color: #474747;
+}
+.p2{
+    font-family: 'Noto Sans TC';
+    font-weight: regular;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: #474747;
+}
+.p3{
+    font-family: 'Noto Sans TC';
+    font-weight: regular;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 2%;
+}
+.montserrat{
+    font-family: 'Montserrat', 'Noto Sans TC';
+    line-height: 120%;
+    letter-spacing: 4%;
+}
+body{
+    background-color: #F9F9F9;
+    text-align: justify;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    color: #957854;
+    width: 100%;
+    margin: 0 auto 45px;
+    position: relative;
+    margin-bottom: 48px;
+}
+.title::before, .title::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    margin: 0 16px;
+
+    width: 80px;
+    height: 2px;
+    background-color: #957854;
+}
+a.btn{
+    display: block;
+    border-radius: 100px;
+    background-color: #91A07B;
+    margin-top: 24px;
+    margin-bottom: 184px;
+    vertical-align: baseline;
+    width: 360px;
+}
+a.btn p, a.btn h6{
+    color: #FCFCFC;
+}
+a.btn img{
+    display: inline-block;
+    margin-left: 16px;
+}
+a.btn:hover{ background-color: #77836B;}
+a.btn:hover h6, a.btn:hover p{ color: #F2F2F2; }

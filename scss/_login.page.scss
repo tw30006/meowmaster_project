@@ -1,0 +1,23 @@
+.login-title{
+    margin: 5% 0 0 0;
+    white-space: nowrap;
+}
+.btn-login{
+    width: 90%;
+    margin: 5% 5% 0% 5%;
+}
+.link-forgetpassword{
+    margin: 1% 45% 5% 45%;
+    display: inline-block;
+    font-size: xx-small;
+    white-space: nowrap;
+    text-decoration: none;
+}
+@media (max-width:767px) {
+    .box{
+        margin: 0 100px;
+    }
+    .wrap{
+        width: 80%;
+    }
+}

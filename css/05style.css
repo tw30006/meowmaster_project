@@ -1,0 +1,158 @@
+
+        .container{
+            width: 100%;
+            margin: auto;
+        }
+        body{
+            font-family : Noto Sans Traditional Chinese;
+        }
+        .header{
+            width: 100%;
+            height: 130px;
+            background-color: #D9BF84;
+            margin-bottom: 150px;
+        }
+        .footer{
+            width: 100%;
+            height: 100px;
+            background-color: #D9BF84;
+            display: Fixed;
+            bottom: 0px;
+        }
+        
+        .path {
+            position: Absolute;
+            left: 180px;
+            top: 194px;
+        }
+        .path il+il::before{
+            content: '/ ';
+        }
+        .latestNews{
+            width: 100%;
+        }
+        .latestNews .wrap{
+            width: 100%;
+            text-align: center;
+            font-size: 36px;
+        }
+        .latestNews .wrap h2{
+            margin: 75px 0px 50px;
+        }
+        .latestNews .pic{
+            width: 100%;
+        }
+        .latestNews .pic .news{
+            width: 85%;
+            box-sizing: border-box;
+            margin:0px auto;
+        }
+        .latestNews .pic .news img{
+            width: 100%;
+            border: 3px solid #9e9e9e;
+            box-sizing: border-box;
+        }
+        .button{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+        .button .bt{
+            width: 150px;
+            height: 50px;
+            font-size: 20px; /*6號字*/
+        }
+        .storeInfo{
+            width: 100%;
+        }
+        .storeInfo .wrap{
+            width: 100%;
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+        .storeInfo .span{
+            width: 100%;
+        }
+
+        .storeInfo .span .text p{
+            font-size: 28px;
+            width: 90%;
+            margin: auto;
+            padding: 20px 10px;
+            box-sizing: border-box;
+        }
+
+        .storeInfo .span .map{
+            width: 90%;
+            margin: 10px auto 0px ;
+            border: 3px solid #9e9e9e;
+            box-sizing: border-box;
+        }
+
+
+        @media screen and (min-width:768px) {
+            .container{
+                width: 1200px;
+                margin: auto;
+            }
+            .path {
+                position: Absolute;
+                left: 180px;
+                top: 194px;
+            }
+            .latestNews{
+                width: 100%; 
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+            }
+            .latestNews .wrap{
+                width: 1200px; 
+                text-align: center;
+                font-size: 36px;
+            }
+            .latestNews .wrap h2{
+                margin: 75px 0px 50px;
+            }
+            .latestNews .pic{
+                width: 100%; 
+                display: flex;
+                margin: 0px 10px 100px;
+                justify-content: space-between;
+                box-sizing: border-box;
+            }
+            .latestNews .pic .news img{
+                width: 370px;
+                height: 303px;
+                border: 3px solid #9e9e9e;
+            }
+            .latestNews.button.bt{
+                display: inline-block;
+                text-align: center;
+            }
+
+            .storeInfo{
+                width: 1200px;  
+                margin: auto;
+            }
+            .storeInfo .span{
+                display: flex;
+                margin: 0px auto 20px;
+            }
+            .storeInfo .span .text{
+                font-size: 28px;
+                width: 50%;
+            }
+            .storeInfo .span .text p {
+                margin-left :100px;
+                margin-bottom: 100px;
+            }
+            .storeInfo .span .map {
+                width: 50%;
+                height: 560px;
+                padding: 3px;
+                border: 3px solid #9e9e9e;
+            }
+        }
+            

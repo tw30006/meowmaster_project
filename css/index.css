@@ -1,0 +1,314 @@
+a{
+    color: inherit; /* 繼承父元素的文字顏色 */
+    text-decoration: none; /* 移除底線 */
+}
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer; /* 如果需要保留點擊效果 */
+}
+.banner{
+    margin-top: 78px;
+    width: 100%;
+    height: 800px;
+    background-image: linear-gradient(to bottom, #F4F0E7, #F4F0E7 20%, #F9F9F9);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.banner img{
+    display: block;
+}
+.banner>picture:first-of-type img{
+    margin-top: 400px;
+}
+.banner .container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+}
+.banner figcaption h2 img{
+    display: inline-block;
+    width: 50px;
+}
+.banner figcaption h2:last-of-type{
+    display: flex;
+    gap: 16px;
+    vertical-align: middle;
+    margin: 24px 0;
+}
+.banner figcaption h6{
+    display: inline-block;
+    margin: 20px 72px;
+}
+
+/* 1.3優惠活動 */
+.sale main{
+    width: 100%;
+    height: 800px;
+    background-image: url("../pic/sale_info_bg.png");
+    background-position: 60%;
+    /* z-index: -1;
+    order: -1; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.sale main div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.sale a{
+    display: block;
+}
+.sale main .card-wrap {
+    overflow: hidden;
+}
+.sale section{
+    width: 384px;
+    display: none;
+    /* box-sizing: border-box; */
+    border-radius: 16px;
+    background-color: rgb(252,252,252,0.7);
+    padding: 48px 36px 24px;
+    text-align: center;
+}
+.sale section:first-of-type{
+    display: block;
+}
+.sale section h3, .sale section p+p{
+    margin-bottom: 48px;
+}
+.sale section h3{
+    position: relative;
+    z-index: 1;
+    /* box-shadow: 0 252px 2px #D6DECF; */
+}
+.sale section h3::after{
+    content: "";
+    display: inline-block;
+    width: 252px;
+    height: 12px;
+    background-color: #D6DECF;
+    position: absolute;
+    right: 62px;
+    top: 30px;
+    z-index: -1;
+}
+.sale p+p{
+    margin-top: 16px;
+}
+.sale section a{
+    margin: auto;
+    padding: 16px 72px;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+}
+.sale section div>a{
+    width: 80%;
+}
+.sale section>img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 36px;
+    cursor: pointer;
+}
+.sale .container>a:hover{
+    padding-top: 8px;
+}
+
+/* 1.4 熱賣商品 */
+.hot{
+    width: 100%;
+    height: 800px;
+    background-image: linear-gradient(to bottom,  #F9F9F9 50%, #F3EEE9);
+}
+.sale h2, .hot h2, .mem h2, .feedback h2{
+    padding-top: 96px;
+}
+.hot main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 24px;
+}
+.hot main a{
+    display: block;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-color: #fff;
+    padding: 16px;
+    text-align: center;
+    border: 4px solid rgb(255, 255, 255, 0);
+}
+.hot main a:hover{
+    border: 4px #CDBAA9 dashed;
+}
+.hot main a img{
+    vertical-align: middle;
+    width: 274px;
+    margin-bottom: 24px;
+}
+.hot main a h4{
+    margin-bottom: 20px;
+}
+.hot main a p+p{
+    margin-top: 8px;
+}
+.hot main a p>span{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 120%;
+    letter-spacing: 4%;
+}
+.hot main a p:last-of-type{
+    margin-top: 20px;
+    color: #91A07B;
+}
+
+/* 1.5 加入會員 */
+.mem{
+    width: 100%;
+    height: 756px;
+    background-color: rgb(237,226,217,0.5);
+    position: relative;
+}
+.mem::after{
+    content: "";
+    display: inline-block;
+    background-image: url("../pic/mem_decor1.png");
+    width: 310px;
+    height: 441px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.mem::before{
+    content: "";
+    display: inline-block;
+    background-image: url("../pic/mem_decor2.png");
+    width: 310px;
+    height: 441px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+.mem main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 244px;
+}
+.mem a{
+    display: block;
+}
+.mem main a>img{
+    display: block;
+    border-radius: 16px;
+    background-color: #FCFCFC;
+    padding: 24px;
+    margin-bottom: 36px;
+}
+.mem main>a>p, .mem section{
+    text-align: center;
+}
+.mem section h5+h5{
+    margin-top: 24px;
+}
+.mem section h5:last-of-type{
+    margin-bottom: 64px;
+}
+.mem section a{
+    border-radius: 100px;
+    border: solid 1px #77836B;
+    margin-top: 24px;
+    vertical-align: baseline;
+    width: 360px;
+    padding: 16px 72px;
+}
+.mem section a p{ color: #77836B; }
+.mem section a img{
+    display: inline-block;
+    margin-left: 16px;
+}
+.mem section a img:last-of-type{
+    width: 14px;
+    display: none;
+}
+.mem section a:hover{
+    border-color: none;
+    background-color: #91A07B;
+}
+.mem section a:hover p{ color: #FCFCFC; }
+.mem section a:hover img:first-of-type{
+    display: none;
+}
+.mem section a:hover img:last-of-type{
+    display: inline-block;
+}
+
+/* 1.6 鏟屎官回饋 */
+.feedback{
+    width: 100%;
+    height: 800px;
+    background-image: linear-gradient(to top,  #F9F9F9 50%, #F3EEE9);
+    position: relative;
+}
+.feedback::after{
+    content: "";
+    display: inline-block;
+    background-image: url("../pic/feedback_decor.png");
+    width: 225px;
+    height: 152px;
+    position: absolute;
+    bottom: 0;
+    right: 64px;
+    z-index: 1;
+}
+.feedback main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px 28px;
+}
+.feedback main a{
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 20px 24px;
+    border-radius: 16px;
+    background-color: #fff;
+}
+.feedback main a:hover{
+    background-color: #F4F0E7;
+}
+.feedback section h4, .feedback section p:not(:nth-of-type(2)){
+    display: inline-block;
+}
+.feedback section h4{
+    margin-right: 4px;
+}
+.feedback section .montserrat{
+    color: #9E9E9E;
+}
+.feedback section .p2{
+    margin: 16px 0 24px;
+    color: #6D6D6B;
+}
+.feedback section .button{
+    width: 100%;
+    color: #77836B;
+    text-align: right;
+    vertical-align: bottom;
+}
+.feedback section .button img{
+    vertical-align: bottom;
+}

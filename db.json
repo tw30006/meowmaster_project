@@ -1,0 +1,94 @@
+{
+  "users": [
+    {
+      "email": "uiui@gmail.com",
+      "password": "$2a$10$xr0zoHeFGwU1YILhUZekh.2AfnYRwm3YHx30989vZOxAscOmzy5iO",
+      "name": "UIUI",
+      "year": "1990",
+      "month": "11",
+      "day": "4",
+      "id": 1
+    },
+    {
+      "email": "nick555@mail.com",
+      "password": "$2a$10$I9/dEoTOYsH0T9Uo2R61..8tgUDJCa.CE2iwMx1CN6jA9PfKEv0oW",
+      "name": "nick",
+      "year": "1997",
+      "month": "1",
+      "day": "10",
+      "id": 2
+    },
+    {
+      "email": "abc@mail.com",
+      "password": "$2a$10$fcs0QmkZflSUY6krdSIHG./Ljrujg8X2T9yXayOSZ6RyZaNgsuA9a",
+      "name": "abc",
+      "year": "1991",
+      "month": "4",
+      "day": "15",
+      "id": 3
+    },
+    {
+      "email": "bcc@mail.com",
+      "password": "$2a$10$RFULUTg.dptUAcFkGSmG..XfNz63RULz1EjLjSw0W1gPQiVIwkqWO",
+      "name": "bcc",
+      "year": "1998",
+      "month": "1",
+      "day": "10",
+      "id": 4
+    },
+    {
+      "email": "bbbb@mail.com",
+      "password": "$2a$10$2Fq1dMEgM.gvBSvAfBl4oez5my30fpCoLoUzqtIgem/WvOGsnfZtC",
+      "name": "bbbb",
+      "year": "1990",
+      "month": "2",
+      "day": "10",
+      "id": 5
+    },
+    {
+      "email": "aaaa@mail.com",
+      "password": "$2a$10$4BsJXIEJ9kGnkycpZdALEuAybAK3zS990.gv6af7BYRhZP2Tc3Wzu",
+      "name": "aaaa",
+      "year": "1998",
+      "month": "7",
+      "day": "17",
+      "id": 6
+    },
+    {
+      "email": "cccc@mail.com",
+      "password": "$2a$10$h1s9LkAQPeVXL.85Cc.x2.kUC.G.5y6AfLzTMUv/YpFyvc0E0/z8O",
+      "name": "cccc",
+      "year": "1979",
+      "month": "11",
+      "day": "12",
+      "id": 7
+    },
+    {
+      "email": "dddd@mail.com",
+      "password": "$2a$10$VQmuR1aURu8D2o8TN6CP0u4cpfC6L2rS2o8jLppPJidJeK0fRESlW",
+      "name": "dddd",
+      "year": "1998",
+      "month": "1",
+      "day": "10",
+      "id": 8
+    },
+    {
+      "email": "eeee@mail.com",
+      "password": "$2a$10$TFAJL1nB30EgXtWsYLFBPuURPBGV.hem8ZhzggfMMp3YpH091ssyO",
+      "name": "eeee",
+      "year": "1992",
+      "month": "1",
+      "day": "1",
+      "id": 9
+    }
+  ],
+  "posts": [
+    {
+      "name": "",
+      "email": "",
+      "phone": "",
+      "birthday": "",
+      "address": ""
+    }
+  ]
+}

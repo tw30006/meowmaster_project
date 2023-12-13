@@ -1,0 +1,56 @@
+a{
+    color: inherit; /* 繼承父元素的文字顏色 */
+    text-decoration: none; /* 移除底線 */
+}
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer; /* 如果需要保留點擊效果 */
+}
+footer#norepeat2{
+    background-color: #F2F2F2;
+    border-top: 1px solid #9E9E9E;
+    padding: 64px 0 64px;
+}
+footer#norepeat2 main{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 64px;
+}
+footer#norepeat2>p{ text-align: center; }
+footer#norepeat2 a{ display: block; }
+footer#norepeat2>a{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+footer#norepeat2 section{
+    text-align: left;
+    vertical-align: top;
+}
+footer#norepeat2 section p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+footer#norepeat2 section a>p{
+    vertical-align: bottom;
+}
+footer#norepeat2 section>a:hover p{
+    color: #9E9E9E;
+}
+footer#norepeat2 a+a, footer#norepeat2 main address+address{
+    margin-top: 12px;
+}
+footer#norepeat2 section img{
+    display: inline-block;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+footer#norepeat2 a>p, footer#norepeat2 address>p{
+    text-align: left !important;
+}
+footer#norepeat2 address>p{
+    font-style: normal;
+}

@@ -1,0 +1,79 @@
+body{
+    font-family : Noto Sans Traditional Chinese;
+}
+.header{
+    width: 100%;
+    height: 130px;
+    background-color: #D9BF84;
+    margin-bottom: 150px;
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #D9BF84;
+    display: Fixed;
+    bottom: 0px;
+}
+
+.path {
+    position: Absolute;
+    left: 180px;
+    top: 194px;
+}
+.path il+il::before{
+    content: '/ ';
+}
+.container{
+    width: 90%;
+    margin: auto;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.container .itemHead{
+    width: 100%;
+    display: flex;
+}
+.container .itemHead .title{
+    width: 50%;
+}
+.container .itemHead .title h2{
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+.container .button{
+    width: 50%;
+    text-align: right;
+}
+.button input[type=button]{
+    width: 80px;
+    font-size: 16px; /*7號字*/
+    margin: 0 10px;
+}
+
+.box{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .question h3{
+    font-size: 24px;
+    border:1px solid #545454;
+    padding:0.5em;
+  }
+  .question p{
+    display:none;
+    font-size: 20px;
+    line-height: 1.5;
+    margin:10px;
+  }
+  .question h3:hover,
+  .question h3.active{
+    background: #D9BF84;
+  }
+  
+  @media screen and (min-width:768px){
+    .container{
+        width: 1200px
+    }
+       
+  }

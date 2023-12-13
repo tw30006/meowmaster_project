@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../scss/all.css">
+    <script src="../JS/common.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- <div class="header"></div> -->
+        <div class="container-information">
+            <h3 class="information-title">編輯會員資料</h3>
+            <div class="section-information">
+                <form class="form-a">
+                    <section class="section-field">
+                        <p class="name-title">姓名</p>
+                        <input type="text" class="input-name">
+                    </section>
+                    <section class="section-field">
+                        <p>電子郵件</p>
+                        <input type="email" class="input-email">
+                    </section>
+                    <section class="section-field">
+                        <p>手機號碼</p>
+                        <input type="text" class="input-phone">
+                    </section>
+                    <section class="section-subscription">
+                        <p class="subscription-title">訂閱通知</p>
+                        <section class="section-check">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label label-size" for="flexCheckDefault">
+                                  訂閱電子郵件
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label label-size" for="flexCheckChecked">
+                                  訂閱SMS
+                                </label>
+                              </div>
+                        </section>
+                    </section>
+                  </form>
+                  <form class="form-b">
+                    <section class="section-field">
+                        <p>生日日期</p>
+                        <input type="num" class="input-birthday" placeholder="xxxx/xx/xx">
+                    </section>
+                    <section class="section-field">
+                        <p class="address-title">地址</p>
+                        <input type="text" class="input-address">
+                    </section>
+                  </form>
+                  
+            </div>
+            <div class="section-save">
+                <section class="button-confirm">
+                    <button type="submit" class="btn btn-primary btn-cancel">取消</button>
+                    <button type="submit" class="btn btn-primary btn-save">儲存更新</button>
+                </section>
+            </div>
+        </div>
+        <!-- <div class="footer"></div> -->
+    </div>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="../assets/JS/infotmation.js"></script>
+</body>
+</html>

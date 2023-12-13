@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../JS/common.js"></script>
+    <title>Checkout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        form {
+            display: grid;
+            gap: 16px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .error-message {
+            color: #ff0000;
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <!-- 放Banner -->
+    </div>
+    
+        <div class="wrap">
+            <ul class="list">
+                <li>
+                    確認品項
+                </li>
+                <li>
+                    填寫資料
+                </li>
+                <li>
+                    付款方式
+                </li>
+                <li>
+                    確認訂單
+                </li>
+                <li>
+                    完成訂單
+                </li>
+            </ul>
+        </div>
+    <div class="container">
+        <div>
+            <form id="checkoutForm1" onsubmit="saveAndRedirect(); return false;">
+                <div>
+                    <h2>收件人資訊</h2>
+                    <div class="firstRow">
+                        <div class="Name">
+                            <label for="name">收件人姓名</label>
+                            <span class="text-danger">*</span>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="Phone">
+                            <label for="phone">收件人電話</label>
+                            <span class="text-danger">*</span>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div class="Email">
+                            <label for="email">收件人信箱</label>
+                            <span class="text-danger">*</span>
+                            <input type="email" id="email" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="submit" >Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <form id="checkoutForm2" onsubmit="saveAndRedirect(); return false;">
+            <div>
+                <h2>配送地址</h2>
+                <div class="SecondRow">
+                    <div class="City">
+                        <label for="city" class= "form-label">縣/市</label>
+                        <span class="text-danger">*</span>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="District">
+                        <label for="district" class= "form-label">鄉鎮市區</label>
+                        <span class="text-danger">*</span>
+                        <input type="text" id="district" name="district" required>
+                    </div>
+                </div>
+                <div class="Street">
+                    <label for="street" class= "form-label">街道地址</label>
+                    <span class="text-danger">*</span>
+                    <input type="text" id="street" name="street" required>
+                </div>
+                <button type="submit" >Submit</button>
+            </div>
+            <div class="error-message" id="errorMessage"></div>
+        </form>
+    </div>
+    <div class="container">
+        <div>
+            <form id="checkoutForm3" onsubmit="saveAndRedirect()">
+                <div>
+                    <h2>付款方式</h2>
+                    <div>
+                        <div>貨到付款</div>
+                        <div>收貨時以現金付款給黑貓送貨大哥就可以囉！請確認電話、地址與到貨時段是否填寫正確</div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="cartWrap">
+        <div class="smallContainer">
+            <table>
+                <tr>
+                    <th>產品資料</th>
+                    <th>單價</th>
+                    <th>數量</th>
+                    <th>小計</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img class="product-image" src="/Users/fletcherwu/MeowMaster/assets/images/鮭魚蘆筍鮮食餐.png" alt="Product 1">
+                            <div>
+                            <p>鮭魚蘆筍鮮食餐</p>
+                            <small>小罐</small>
+                            <br>
+                    <a href="">刪除</a>
+                        </div>
+                        </div>
+                    </td>
+                    <td>$50</td>
+                    <td><input type="數量" value="1"></td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img class="product-image" src="/Users/fletcherwu/MeowMaster/assets/images/鮭魚蘆筍鮮食餐.png" alt="Product 1">
+                            <div>
+                            <p>鮭魚蘆筍鮮食餐</p>
+                            <small>小罐</small>
+                            <br>
+                    <a href="">刪除</a>
+                        </div>
+                        </div>
+                    </td>
+                    <td>$50</td>
+                    <td><input type="數量" value="1"></td>
+                    <td>$50</td>
+                </tr>
+
+            </table>
+            <div class="totalPrice">
+                <table>
+                    <tr>
+                        <td>商品金額</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>運費</td>
+                        <td>$50</td>
+                    </tr>
+                    <tr>
+                        <td>訂單總金額</td>
+                        <td>$150</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottomWrap" onsubmit="saveAndRedirect(); return false;">
+        <button type="submit">上一步</button>
+        <button type="submit">下一步</button>
+    </div>
+    <script src="/Users/fletcherwu/MeowMaster/js/checkOut.js"></script>
+    <div class="footer">
+    <!-- 放Footer -->
+    </div>
+</body>
+</html>

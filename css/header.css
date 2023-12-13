@@ -1,0 +1,103 @@
+a{
+    color: inherit; /* 繼承父元素的文字顏色 */
+    text-decoration: none; /* 移除底線 */
+}
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer; /* 如果需要保留點擊效果 */
+}
+#norepeat header{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4.894833%;
+    box-sizing: border-box;
+}
+#norepeat header a{
+    display: block;
+}
+#norepeat header img{
+    vertical-align: middle;
+}
+#norepeat header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 40px;
+}
+#norepeat header nav a{
+    margin: 24px 24px;
+}
+#norepeat header nav a:hover{
+    color: #9E9E9E;
+}
+#norepeat header .icon{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+#norepeat header .icon a:first-of-type{
+    border: 1px solid #91A07B;
+    border-radius: 100px;
+    margin-right: 16px;
+    padding: 12px 24px;
+    color: #91A07B;
+}
+#norepeat header .icon a:first-of-type:hover{
+    border: 1px solid #D6DECF;
+    color: #D6DECF;
+}
+#norepeat header .icon img:last-of-type{
+    display: none;
+}
+#norepeat header .icon a:last-of-type:hover img:first-of-type{
+    display: none;
+}
+#norepeat header .icon a:last-of-type:hover img:last-of-type{
+    display: block;
+}
+
+/* fixed & sticky */
+#norepeat div.norepeat3{
+    display: block;
+    position: fixed;
+    right: 8px;
+    bottom: 140px;
+    align-items: center;
+    z-index: 999;
+}
+#norepeat div.norepeat3>a{
+    display: block;
+    margin: auto;
+}
+#norepeat div.norepeat3>a+a{
+    margin-top: 24px;
+}
+#norepeat div.norepeat3 img{
+    display: block;
+    margin: auto;
+}
+
+@keyframes tada{0%{-webkit-transform:scaleX(1);transform:scaleX(1)}10%,20%{-webkit-transform:scale3d(.9,.9,.9) rotate(-3deg);transform:scale3d(.9,.9,.9) rotate(-3deg)}30%,50%,70%,90%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate(3deg);transform:scale3d(1.1,1.1,1.1) rotate(3deg)}40%,60%,80%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate(-3deg);transform:scale3d(1.1,1.1,1.1) rotate(-3deg)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}.animate__tada{-webkit-animation-name:tada;animation-name:tada}
+
+#norepeat div.norepeat3>a:first-of-type:hover img{
+    animation: tada 1.75s ease-in ;
+}
+#norepeat div.norepeat3>a:first-of-type:hover p{
+    color: #D9BF84;
+}
+#norepeat div.norepeat3>a:last-of-type:hover img{
+    content: url('../pic/gototop_hover.png');
+}
+#norepeat #goToTopBtn{
+    display: none;
+}
